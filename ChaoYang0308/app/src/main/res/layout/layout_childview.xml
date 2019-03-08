@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/img_sp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/cb_sp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txt_title_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_sp"
+        android:text="商品标题"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_price_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title_sp"
+        android:layout_toRightOf="@id/img_sp"
+        android:text="price"
+        android:textColor="#f00"
+        android:textSize="14sp" />
+    <chaoyang.bawei.com.chaoyang0308.view.myview.MyCalculator
+        android:id="@+id/mc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_sp"
+        android:layout_alignParentRight="true"></chaoyang.bawei.com.chaoyang0308.view.myview.MyCalculator>
+</RelativeLayout>

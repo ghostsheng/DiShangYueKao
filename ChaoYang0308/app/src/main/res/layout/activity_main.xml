@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+ <EditText
+     android:layout_width="300dp"
+     android:layout_height="50dp"
+     android:id="@+id/et_ssk"
+     android:hint="请输入搜索内容"
+     />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_ssk"
+        android:text="搜索"
+        android:id="@+id/btn_ssj"/>
+    <chaoyang.bawei.com.chaoyang0308.view.myview.MyFlluid
+        android:id="@+id/mf"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btn_ssj"
+        android:layout_height="wrap_content">
+    </chaoyang.bawei.com.chaoyang0308.view.myview.MyFlluid>
+</RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
+</LinearLayout>
